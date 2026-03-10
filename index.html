@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tochukwu Nnamdi Awujo | Resume</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- External stylesheet -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="content-wrap">
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.pdf" download>Download Resume PDF</a>
+        </div>
+    </nav>
+
     <!-- Intro -->
-    <header>
+    <header id="about">
         <div class="content-wrap">
             <img class="profile-img column-narrow" src="IMG_6581.jpeg" alt="Tochukwu Nnamdi Awujo">
 
@@ -32,7 +44,7 @@
 
     <main>
         <!-- Work Experience -->
-        <section>
+        <section id="work" class="work-section">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
 
@@ -59,10 +71,9 @@
         </section>
 
         <!-- Education -->
-        <section>
+        <section id="education">
             <div class="content-wrap">
                 <h2>Education</h2>
-
                 <h3>California State University, Northridge, 2021 - 2026</h3>
                 <p>Bachelor of Science in Computer Science (Expected Grad: May 2026)</p>
                 <p>
@@ -73,18 +84,20 @@
         </section>
     </main>
 
-    <!-- Footer & contact info -->
-    <footer>
+    <!-- Footer -->
+    <footer id="contact">
         <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
 
             <div class="contact-info">
-                <a href="mailto:Tochi.awujo2@gmail.com">Tochi.awujo2@gmail.com</a>
+                <a href="mailto:Tochi.awujo2@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> Tochi.awujo2@gmail.com
+                </a>
                 <a href="https://tochiawujoswebsite.netlify.app/" target="_blank" rel="noopener">
-                    tochiawujoswebsite.netlify.app
+                    <i class="fa-solid fa-globe"></i> Website
                 </a>
                 <a href="https://www.linkedin.com/in/tochiawujo/" target="_blank" rel="noopener">
-                    LinkedIn
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
             </div>
 

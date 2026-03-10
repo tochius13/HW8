@@ -1,6 +1,7 @@
-/* Box model fix */
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -38,13 +39,44 @@ h2 {
   margin-top: 0;
 }
 
+header h1,
+header h2 {
+  margin: 0;
+}
+
+
+nav {
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .content-wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
 header {
   background-color: white;
 }
 
-header h1,
-header h2 {
-  margin: 0;
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 section {
@@ -53,15 +85,21 @@ section {
   border-radius: 6px;
 }
 
-footer {
-  background-color: white;
-  text-align: center;
+
+.work-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../office-bg.jpg") center/cover no-repeat;
+  color: white;
 }
 
-.profile-img {
-  width: 100%;
-  border-radius: 50%;
+.work-section h2,
+.work-section h3,
+.work-section p,
+.work-section li {
+  color: white;
 }
+
 
 .column-narrow {
   width: 30%;
@@ -76,9 +114,19 @@ footer {
   min-height: 225px;
 }
 
+
+footer {
+  background-color: white;
+  text-align: center;
+}
+
 .contact-info a {
   padding: 10px;
   display: inline-block;
+}
+
+.contact-info i {
+  margin-right: 8px;
 }
 
 a {
